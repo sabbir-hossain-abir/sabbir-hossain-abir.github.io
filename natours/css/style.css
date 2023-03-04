@@ -151,4 +151,11 @@ body {
   text-align: center;
 }
 
+.row {
+  max-width: 114rem;
+  background-color: #ff006a;
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+
 /*# sourceMappingURL=style.css.map */
