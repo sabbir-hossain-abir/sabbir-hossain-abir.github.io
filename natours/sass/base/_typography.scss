@@ -28,3 +28,18 @@ body {
   animation: moveInRight 1s ease-out;
   margin-top: 1.5rem;
 }
+
+.heading-secondary {
+  letter-spacing: 2px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(to right, $color-primary-light,$color-primary-dark);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+  }
+}

@@ -80,8 +80,26 @@ body {
   margin-top: 1.5rem;
 }
 
+.heading-secondary {
+  letter-spacing: 2px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(to right, #6295AB, #3A6A96);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.heading-secondary:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+}
+
 .u-center-text {
   text-align: center;
+}
+
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
 }
 
 .btn:link, .btn:visited {
@@ -202,8 +220,8 @@ body {
 
 .about-section {
   background-color: #f7f7f7;
-  padding: 5rem 0;
-  margin-top: -20vh;
+  padding: 25rem 0;
+  margin-top: -15vh;
 }
 
 /*# sourceMappingURL=style.css.map */
