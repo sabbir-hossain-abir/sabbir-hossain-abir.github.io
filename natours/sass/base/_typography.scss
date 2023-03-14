@@ -5,7 +5,6 @@ body {
   padding: 2.5rem;
 }
 
-
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
@@ -34,7 +33,11 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background: linear-gradient(to right, $color-primary-light,$color-primary-dark);
+  background: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
@@ -52,7 +55,7 @@ body {
 
 .paragraph {
   font-size: $default-font;
-  &:not(:last-child){
-      margin-bottom: 3rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
