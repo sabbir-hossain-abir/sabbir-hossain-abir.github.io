@@ -6,7 +6,6 @@
     text-decoration: none;
     text-transform: uppercase;
     padding: 1.5rem 4rem;
-    margin-top: 6rem;
     border-radius: 10rem;
     transition: all .2s;
     position: relative;
@@ -31,11 +30,23 @@
   &--white {
     background-color: $color-white;
     color: $font-color;
+    margin-top: 6rem;
 
     &::after {
       background-color: $color-white;
     }
   }
+
+  &--blue {
+    background-color: $color-primary;
+    color: $color-white;
+    margin-top: 2rem;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+  
 
   &::after {
     display: inline-block;
