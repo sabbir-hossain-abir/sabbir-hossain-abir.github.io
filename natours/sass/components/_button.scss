@@ -40,10 +40,9 @@
   &--blue {
     background-color: $color-primary;
     color: $color-white;
-    margin-top: 2rem;
 
     &::after {
-      background-color: $color-white;
+      background-color: $color-primary;
     }
   }
   
