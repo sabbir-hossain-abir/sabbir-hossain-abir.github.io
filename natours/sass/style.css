@@ -192,12 +192,13 @@ body {
   color: #3C7697;
   border-bottom: 1px solid #3C7697;
   padding: 3px;
+  border-radius: 0;
 }
 .btn-text:hover {
   background-color: #3C7697;
   color: white;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translate(-2px);
+  padding: 5px;
 }
 .btn-text:active {
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
@@ -392,6 +393,7 @@ body {
   padding: 6rem;
   padding-left: 9rem;
   transform: skewX(-12deg);
+  position: relative;
 }
 .story__shape {
   width: 15rem;
@@ -404,9 +406,35 @@ body {
 }
 .story__img {
   height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: all 0.3s;
 }
 .story__text {
   transform: skewX(12deg);
+}
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  opacity: 0;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.story:hover .story__caption {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.story:hover .story__img {
+  filter: blur(3px) brightness(80%);
+  transform: translateX(-4rem) scale(1);
 }
 
 .header {
