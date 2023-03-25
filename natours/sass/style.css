@@ -89,6 +89,7 @@ body {
   font-weight: 700;
   background: linear-gradient(to right, #6295ab, #3a6a96);
   display: inline-block;
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
