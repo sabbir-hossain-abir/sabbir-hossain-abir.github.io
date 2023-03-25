@@ -55,13 +55,12 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: #777777;
-  padding: 3rem;
+  line-height: 1.7;
 }
 
 .heading-primary {
   color: white;
   text-transform: uppercase;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -87,9 +86,8 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background: linear-gradient(to right, #6295ab, #3a6a96);
+  background: linear-gradient(to right, #6295AB, #3A6A96);
   display: inline-block;
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -134,47 +132,49 @@ body {
   margin-top: 10rem;
 }
 
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-decoration: none;
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
+  text-decoration: none;
   padding: 1.5rem 4rem;
+  display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
 }
 .btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
-.btn:active {
-  transform: translateY(-0.1rem);
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 .btn--white {
   background-color: white;
-  color: #777777;
-  margin-top: 6rem;
+  color: #272727;
+  margin-top: 4rem;
 }
 .btn--white::after {
   background-color: white;
 }
 .btn--blue {
-  background-color: #3c7697;
+  background-color: #3C7697;
   color: white;
 }
 .btn--blue::after {
-  background-color: #3c7697;
+  background-color: #3C7697;
 }
 .btn::after {
-  display: inline-block;
   content: "";
+  display: inline-block;
   height: 100%;
   width: 100%;
   border-radius: 10rem;
@@ -185,28 +185,28 @@ body {
   transition: all 0.4s;
 }
 .btn--animated {
-  animation: moveInBottom 0.5s ease-out 0.5s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
 }
 
-.btn-text:link,
-.btn-text:visited {
+.btn--text:link, .btn--text:visited {
   font-size: 1.6rem;
+  color: #3C7697;
+  display: inline-block;
   text-decoration: none;
-  color: #3c7697;
-  border-bottom: 1px solid #3c7697;
+  border-bottom: 1px solid #3C7697;
   padding: 3px;
-  border-radius: 0;
+  transition: all 0.2s;
 }
-.btn-text:hover {
-  background-color: #3c7697;
+.btn--text:hover {
+  background-color: #3C7697;
   color: white;
-  transform: translate(-2px);
-  padding: 5px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
-.btn-text:active {
-  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.15);
-  transform: translate(0);
+.btn--text:active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0);
 }
 
 .composition {
@@ -233,7 +233,7 @@ body {
   top: 10rem;
 }
 .composition_photo:hover {
-  outline: 1rem solid #3c7697;
+  outline: 1rem solid #3C7697;
   transform: scale(1.2);
   box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
   z-index: 10;
@@ -255,7 +255,7 @@ body {
   font-size: 6rem;
   margin-bottom: 2rem;
   display: inline-block;
-  background: linear-gradient(to right bottom, #3a6a96, #6295ab);
+  background: linear-gradient(to right bottom, #3A6A96, #6295AB);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -279,7 +279,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
@@ -292,7 +291,7 @@ body {
   transform: rotateY(180deg);
 }
 .card__side--back-1 {
-  background-image: linear-gradient(to right bottom, #6295ab, #3a6a96);
+  background-image: linear-gradient(to right bottom, #6295AB, #3A6A96);
 }
 .card__side--back-2 {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
@@ -316,16 +315,13 @@ body {
   border-top-right-radius: 3px;
 }
 .card__picture--1 {
-  background-image: linear-gradient(to right bottom, #6295ab, #3a6a96),
-    url(../img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, #6295AB, #3A6A96), url(../img/nat-5.jpg);
 }
 .card__picture--2 {
-  background-image: linear-gradient(to right bottom, #7ed56f, #28b485),
-    url(../img/nat-6.jpg);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg);
 }
 .card__picture--3 {
-  background-image: linear-gradient(to right bottom, #35842c, #25591f),
-    url(../img/nat-7.jpg);
+  background-image: linear-gradient(to right bottom, #35842c, #25591f), url(../img/nat-7.jpg);
 }
 .card__heading {
   font-size: 2.8rem;
@@ -344,25 +340,13 @@ body {
   box-decoration-break: clone;
 }
 .card__heading-span--1 {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(98, 149, 171, 0.85),
-    rgba(58, 106, 150, 0.85)
-  );
+  background-image: linear-gradient(to right bottom, rgba(98, 149, 171, 0.85), rgba(58, 106, 150, 0.85));
 }
 .card__heading-span--2 {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(126, 213, 111, 0.85),
-    rgba(40, 180, 133, 0.85)
-  );
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
 }
 .card__heading-span--3 {
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(53, 132, 44, 0.85),
-    rgba(37, 89, 31, 0.85)
-  );
+  background-image: linear-gradient(to right bottom, rgba(53, 132, 44, 0.85), rgba(37, 89, 31, 0.85));
 }
 .card__details {
   padding: 3rem;
@@ -418,6 +402,7 @@ body {
   width: 15rem;
   height: 15rem;
   float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
   shape-outside: circle(50% at 50% 50%);
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
@@ -426,7 +411,6 @@ body {
 .story__img {
   height: 100%;
   transform: translateX(-4rem) scale(1.4);
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.3s;
 }
@@ -444,7 +428,6 @@ body {
   font-size: 2rem;
   opacity: 0;
   transition: all 0.3s;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .story:hover .story__caption {
@@ -456,17 +439,26 @@ body {
   transform: translateX(-4rem) scale(1);
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(98, 149, 171, 0.8),
-      rgba(58, 106, 150, 0.8)
-    ),
-    url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(98, 149, 171, 0.8), rgba(58, 106, 150, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   position: relative;
 }
@@ -493,18 +485,17 @@ body {
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
-.row:before,
-.row:after {
+.row:before, .row:after {
   content: "";
   display: table;
 }
 .row:after {
   clear: both;
 }
-.row [class^="col-"] {
+.row [class^=col-] {
   float: left;
 }
-.row [class^="col-"]:not(:last-child) {
+.row [class^=col-]:not(:last-child) {
   margin-right: 6rem;
 }
 .row .col-1-of-2 {
@@ -514,16 +505,22 @@ body {
   width: calc((100% - 2 * 6rem) / 3);
 }
 .row .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+  width: calc(
+      2 * ((100% - 2 * 6rem) / 3) + 6rem
+    );
 }
 .row .col-1-of-4 {
   width: calc((100% - 3 * 6rem) / 4);
 }
 .row .col-2-of-4 {
-  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+  width: calc(
+      2 * ((100% - 3 * 6rem) / 4) + 6rem
+    );
 }
 .row .col-3-of-4 {
-  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+  width: calc(
+      3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem
+    );
 }
 
 .about-section {
@@ -535,12 +532,7 @@ body {
 .section-features {
   margin-top: -10rem;
   padding: 20rem 0;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(98, 149, 171, 0.8),
-      rgba(58, 106, 150, 0.8)
-    ),
-    url(img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(98, 149, 171, 0.8), rgba(58, 106, 150, 0.8)), url(img/nat-4.jpg);
   background-size: cover;
   background-position: top;
   transform: skewY(-7deg);
@@ -556,6 +548,8 @@ body {
 }
 
 .section-stories {
+  position: relative;
   padding: 15rem 0;
-  background-color: #f7f7f7;
-} /*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
