@@ -9,24 +9,34 @@ body {
   color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
+
+  &--main {
+    display: block;
+    font-size: 7rem;
+    font-weight: 700;
+    letter-spacing: 4rem;
+    animation: moveInLeft 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    animation: moveInRight 1s ease-out;
+    margin-top: 1.5rem;
+
+    @include respond(phone) {
+      letter-spacing: 0rem;
+    }
+  }
+
 }
 
-.heading-primary--main {
-  display: block;
-  font-size: 7rem;
-  font-weight: 700;
-  letter-spacing: 4rem;
-  animation: moveInLeft 1s ease-out;
-}
-
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 400;
-  letter-spacing: 0.5rem;
-  animation: moveInRight 1s ease-out;
-  margin-top: 1.5rem;
-}
 
 .heading-secondary {
   letter-spacing: 2px;
@@ -41,6 +51,14 @@ body {
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
+
+  @include respond(tablet-portrait) {
+    font-size: 2.5rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
