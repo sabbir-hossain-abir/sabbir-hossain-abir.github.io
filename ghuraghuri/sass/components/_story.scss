@@ -10,6 +10,12 @@
     transform: skewX(-12deg);
     position: relative;
 
+    @include respond(tablet-portrait) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
 
     &__shape {
         width: 15rem;
