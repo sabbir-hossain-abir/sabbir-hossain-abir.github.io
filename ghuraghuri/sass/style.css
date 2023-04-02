@@ -548,6 +548,18 @@ body {
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
+@media only screen and (max-width: 56.25em) {
+  .navigation__background {
+    top: 4.5rem;
+    right: 4.5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .navigation__background {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
+}
 .navigation__nav {
   height: 100vh;
   position: fixed;
@@ -811,7 +823,8 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .about-section {
-    padding: 20rem 0;
+    padding: 40rem 0;
+    margin-top: -35rem;
   }
 }
 
