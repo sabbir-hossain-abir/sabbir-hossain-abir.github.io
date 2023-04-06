@@ -19,9 +19,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 20px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     z-index: 100;
 }
@@ -32,9 +32,13 @@ header {
     color: #359381;
     text-transform: uppercase;
     pointer-events: none;
+    margin-right: 370px;
 }
 .navigation li {
     list-style: none;
+    float: left;
+    text-align: center;
+
 }
 
 .navigation a {
@@ -44,4 +48,33 @@ header {
     border-radius: 20px;
     margin: 0 10px;
     font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-title {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
 }
