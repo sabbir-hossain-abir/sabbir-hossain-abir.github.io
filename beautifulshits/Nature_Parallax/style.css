@@ -75,6 +75,27 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    height: 100%;
     width: 100%;
     pointer-events: none;
+}
+
+.parallax-scrolling {
+    position: relative;
+    padding: 100px;
+    background: #003329;
+}
+
+.parallax-scrolling h2 {
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.parallax-scrolling p {
+    font-size: 1.2em;
+    color: #fff;
+    text-align: justify;
+    margin-bottom: 20px;
 }
