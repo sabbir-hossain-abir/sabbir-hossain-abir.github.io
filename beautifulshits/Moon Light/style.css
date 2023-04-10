@@ -41,3 +41,44 @@ ul a {
     font-weight: 300;
     padding: 0 1.5rem;
 }
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 10rem;
+}
+
+.hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero img#moon {
+    mix-blend-mode: screen;
+}
+
+.text {
+    background-color: #1b0522;
+    padding: 100px;
+    height: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 2rem;
+}
