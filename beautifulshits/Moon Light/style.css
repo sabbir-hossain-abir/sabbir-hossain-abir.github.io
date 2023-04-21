@@ -68,6 +68,8 @@ header {
     font-size: 5em;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-left: 40%;
+    text-align: center;
 }
 
 .parallax img {
