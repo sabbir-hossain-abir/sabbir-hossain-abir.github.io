@@ -8,9 +8,9 @@ let Front= document.getElementById("Front");
 window.addEventListener("scroll", () => {
     let value= window.scrollY;
     text.style.marginRight= value*2.5+"px";
-    leaf.style.top= -value*1.5+"px";
-    leaf.style.left= value*1.5+"px";
-    Front.style.left= -value*1.5+"px";
-    Stars.style.top= value*1+"px";
+    // Back.style.top= value*1.5+"px";
+    Front.style.top= value*1.5+"px";
+    // Front.style.left= -value*1.5+"px";
+    Stars.style.left= -value*.05+"px";
 })
 

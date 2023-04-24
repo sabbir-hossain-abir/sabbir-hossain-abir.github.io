@@ -83,6 +83,11 @@ header {
 
 .parallax img#Moon {
     mix-blend-mode: screen;
+    position: fixed;
+}
+
+.parallax img#Back {
+    position: fixed;
 }
 
 .parallax-scrolling {
